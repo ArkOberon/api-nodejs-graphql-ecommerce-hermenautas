@@ -157,7 +157,7 @@ Authentication: Database Native
 
 Nombre de usuario: admin
 
-contraseña: 6yfKUY45kiRUE8WsDV2NY4B8G7cUgZimp4RZqTFqYJbg
+contraseña: 
 
 check en save password locally
 ```
