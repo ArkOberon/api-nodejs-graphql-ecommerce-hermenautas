@@ -133,7 +133,7 @@ Introducir contraseña SuperUsuario
 Crear usuario admin con contraseña
 
 ```
-6yfKUY45kiRUE8WsDV2NY4B8G7cUgZimp4RZqTFqYJbg
+
 ```
 
 Crear Base de Datos llamada test-user y Asignar admin como propietario de test-user
