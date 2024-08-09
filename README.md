@@ -1,11 +1,6 @@
-<p align="center">
-<img src="/portada-repo.jpg" alt="1" border="0">
-</p>
+
 <p align="center">&nbsp;</p>
 
-PRUEBA
-
-prueba 2
 
 # PREPARACIÓN ENTORNO LOCAL
 
