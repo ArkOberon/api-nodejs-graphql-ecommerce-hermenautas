@@ -1,0 +1,46 @@
+{
+  "name": "auth-ms",
+  "version": "1.0.0",
+  "description": "Hermenautas Authentication Microservice",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "lint:fix": "eslint --fix ./src",
+    "start": "nodemon src/server.js --ext js,graphql",
+    "test": "nodemon private.js",
+    "dbtest": "nodemon src/database/test.js"
+  },
+  "author": "Pedro M. Cruz",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "lint-staged": "^13.1.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.3.0",
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "base64url": "^3.0.1",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "http": "^0.0.1-security",
+    "husky": "^8.0.3",
+    "jsonwebtoken": "^9.0.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.4",
+    "paseto": "^3.1.2",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0"
+  }
+}
