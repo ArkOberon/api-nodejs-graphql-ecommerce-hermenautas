@@ -1,0 +1,31 @@
+{ 
+  "error": {
+    "forbidden": "No tienes permisos suficientes para realizar esta acción.",
+    "spaces": "Elimina los espacios en tu nombre de usuario.",
+    "password": "La contraseña debe tener al menos 7 caracteres.",
+    "spacesPass": "Elimina los espacios en tu contraseña.", 
+    "noUser": "Este usuario no existe.",
+    "user": "Este usuario ya está registrado.",
+    "minUsername": "El nombre de usuario debe tener entre 4 a 25 caracteres.",
+    "alphanumeric": "El nombre de usuario solo puede tener caracteres alfanuméricos.",
+    "email": "Este e-mail ya está registrado.",
+    "invalidEmail": "Formato de e-mail incorrecto.",
+    "spacesEmail": "Elimina los espacios en tu email.",
+    "noEmail": "No existe ningún usuario con ese e-mail."
+  },
+  "doLogin": {    
+    "password": "Contraseña incorrecta."
+  }, 
+  "doUpdatePassword": {
+    "noMatch": "La contraseña no coincide con la existente."
+  },
+  "doSendEmail": {
+    "emailRequired": "Por favor, introduce tu e-mail.",
+    "fail": "Ha ocurrido algún error. El email del usuario es incorrecto. Introduce uno nuevo o inténtalo más tarde.",
+    "emailTitle": "Por favor, restablece tu contraseña",
+    "hello": "Hola",
+    "paragraph1": "Acabamos de enviarte este email atendiendo a tu solicitud de restauración de contraseña.",
+    "paragraph2": "Para restablecer tu contraseña, por favor, haz click en el botón: ",
+    "resetButton": "Restablecer"
+  }
+}
