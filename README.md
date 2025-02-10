@@ -1,6 +1,7 @@
 
 <p align="center">&nbsp;</p>
 
+# EJEMPLO DE API/FUNCIONES ECOMMERCE + CRUD DE USUARIOS
 
 # PREPARACIÓN ENTORNO LOCAL
 
