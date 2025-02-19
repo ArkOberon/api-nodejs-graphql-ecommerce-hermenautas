@@ -1,82 +1,87 @@
+<div>
+  <div>   
+    <img src="" alt="banner" />
+  <div />
 
-<p align="center">&nbsp;</p>
+  <div align="center">
+    <img src="https://img.shields.io/badge/-graphql-black?style=for-the-badge&logoColor=white&logo=graphql&color=E10098" alt="graphql" />
+    <img src="https://img.shields.io/badge/-node_js-black?style=for-the-badge&logoColor=white&logo=nodedotjs&color=5FA04E" alt="nodedotjs" />
+    <img src="https://img.shields.io/badge/-express-black?style=for-the-badge&logoColor=white&logo=express&color=000000" alt="express" />
+    <img src="https://img.shields.io/badge/-apollo_server-black?style=for-the-badge&logoColor=white&logo=apollographql&color=311C87" alt="apollographql" />
+    <img src="https://img.shields.io/badge/-postgresql-black?style=for-the-badge&logoColor=white&logo=postgresql&color=4169E1" alt="postgresql" />
+    <img src="https://img.shields.io/badge/-xampp-black?style=for-the-badge&logoColor=white&logo=xampp&color=FB7A24" alt="xampp" />
+    <img src="https://img.shields.io/badge/-wordpress-black?style=for-the-badge&logoColor=white&logo=wordpress&color=21759B" alt="wordpress" />
+    <img src="https://img.shields.io/badge/-woocommerce-black?style=for-the-badge&logoColor=white&logo=woocommerce&color=96588A" alt="woocommerce" />
+  </div>
 
-# EJEMPLO DE API/FUNCIONES ECOMMERCE DEL PROYECTO HERMENAUTAS + CRUD DE USUARIOS
+<h3 align="center">e-Commerce API GraphQL</h3>
 
-# PREPARACIÓN ENTORNO LOCAL
+   <div align="center">
+     API created with apollo server + express + nodeJS, which allows us to connect to Wordpress as a content manager and perform virtually all the usual functions of an online shop.
+    </div>
+</div>
 
-## **Índice**
+## 📋 <a name="table">Table of Contents</a>
 
-* [1. Configurar XAMPP](#1)
-* [2. Configurar WORDPRESS en local](#2)
-  - [2.1. Datos para la Configuración DB](#21)
-  - [2.2. Datos para la Configuración del Tema](#22)
-  - [2.3. Configurar WOOCOMMERCE](#23)
-* [3. Configuración de Variables de Entorno](#3)
-* [4. Instalación POSTGRESQL](#4)
-* [5. Instalación DBEAVER](#5)
-* [6. Iniciar el Servidor en local](#6)
+* [1. Configuring XAMPP](#1)
+* [2. Configuring WORDPRESS locally](#2)
+  - [2.1. Data for DB Configuration](#21)
+  - [2.2. Configure WOOCOMMERCE](#23)
+* [3. Environment Variables Configuration](#3)
+* [4. POSTGRESQL installation](#4)
+* [5. DBEAVER Installation](#5)
+* [6. Starting the Server locally](#6)
 
-## **1. Configurar XAMPP** <div id="1"/>
+## **1. Configuring XAMPP** <div id="1"/>
 
-Instalar XAMPP [https://www.apachefriends.org/es/index.html](https://www.apachefriends.org/es/index.html)
+Install XAMPP [https://www.apachefriends.org/es/index.html](https://www.apachefriends.org/es/index.html)
 
-Iniciar Servidor Apache en XAMPP
+Start Apache Server on XAMPP
 
-Iniciar Servidor MySQL en XAMPP
+Start MySQL Server on XAMPP
 
-Crear Base de Datos con PHPMyAdmin en XAMPP
+Create Database with PHPMyAdmin on XAMPP
 
 ```
 NOMBRE DE BASE DE DATOS: "oberon-lambda"
 ```
 
-## 2. **Configurar WORDPRESS en local** <div id="2"/>
+## 2. **Configuring WORDPRESS locally** <div id="2"/>
 
-Descargar Wordpres [https://es.wordpress.org/](https://es.wordpress.org/)
+Download Wordpres [https://es.wordpress.org/](https://es.wordpress.org/)
 
-Crear una carpeta en /xamp/htdocs/ llamada hermenautas
+Create a folder in /xamp/htdocs/ named hermenautas
 
-Extraer archivos de Wordpress dentro de la carpeta /xamp/htdocs/hermenautas
+Extract Wordpress files into the /xamp/htdocs/hermenautas folder.
 
-Proceder a la Instalación de Wordpress accediendo a [http://localhost/hermenautas](http://localhost/hermenautas)
+Proceed to install Wordpress by going to [http://localhost/hermenautas](http://localhost/hermenautas)
 
-### 2.1. **Datos para la Configuración DB** <div id="21"/>
+### 2.1. **Data for DB Configuration** <div id="21"/>
 
 ```
-Nombre de la base de datos = "oberon-lambda"
+Database name = ‘oberon-lambda’.
 
-Nombre de usuario = 'root'
+Username = ‘root
 
-Contraseña = null
+Password = null
 
-Servidor de la base de datos = 'localhost'
+Database server = ‘localhost
 
-Prefijo de tabla = wp\_
+Table prefix = wp\_
 ```
 
-### 2.2. **Datos para la Configuración del Tema** <div id="22"/>
+### 2.2. **Configure WOOCOMMERCE** <div id="23"/>
 
-Descargar Theme: SAVOY en [https://themeforest.net/](https://themeforest.net/)
+Go to WooCommerce > Settings > Advanced > Generate API Key
 
-Instalar Theme: SAVOY Padre y Child
+Get Customer Key
 
-### 2.3 **Configurar WOOCOMMERCE** <div id="23"/>
+Get Customer Secret Key
 
-Realizar los pasos básicos de instalación del tema Savoy
+## 3. **Environment Variables Configuration** <div id="3"/>
 
-Asegurarse de contar con todos los productos DEMO de SAVOY
+Save all these variables in an .env file and place it in the root directory where you are hosted in the Backend
 
-Dirigirse a WooCommerce > Ajustes > Avanzado > Generar Clave API
-
-Obtener Clave del cliente
-
-Obtener Clave secreta de cliente
-
-## 3. **Configuración de Variables de Entorno** <div id="3"/>
-
-Guardar todas estas variables en un archivo .env y colocar en el directorio raíz donde se encuentre
-alojado en el Backend
 ```bash
 ## APOLLO SERVER CONFIG
 
@@ -121,29 +126,29 @@ WOO_CONSUMER_KEY_DEV = ""
 
 WOO_CONSUMER_SECRET_DEV = ""
 ```
-## 4. **Instalación POSTGRESQL** <div id="4"/>
 
-Descargar e Instalar PostgreSQL [https://www.postgresql.org/](https://www.postgresql.org/)
+This API uses the PASETO system, generate your own keys by following the instructions in the following documentation:
+- [Paseto npm](https://www.npmjs.com/package/paseto)
+- [Paseto usage examples](https://pyseto.readthedocs.io/en/latest/paseto_usage.html)
 
-Establecer contraseña SuperUsuario
 
-Acceder a PgAdmin 4
+## 4. **POSTGRESQL installation** <div id="4"/>
 
-Introducir contraseña SuperUsuario
+Download and Install PostgreSQL [https://www.postgresql.org/](https://www.postgresql.org/)
 
-Crear usuario admin con contraseña
+Set SuperUser password
 
-```
+Login to PgAdmin 4
 
-```
+Enter SuperUser password
 
-Crear Base de Datos llamada test-user y Asignar admin como propietario de test-user
+Create Database named test-user and Assign admin as owner of test-user
 
 ## 5. **Instalación DBEAVER** <div id="5"/>
 
-Instalar DBeaver [https://dbeaver.io/](https://dbeaver.io/)
+Install DBeaver [https://dbeaver.io/](https://dbeaver.io/)
 
-Acceder al programa y realizar nueva conexión insertando los siguientes datos:
+Access the program and make a new connection by inserting the following data:
 
 ```
 Connect by: Host
@@ -156,27 +161,27 @@ Database: test-user
 
 Authentication: Database Native
 
-Nombre de usuario: admin
+Username: admin
 
-contraseña: 
+password: 
 
 check en save password locally
 ```
 
-## 6. **Iniciar el Servidor en local** <div id="6"/>
+## 6. **Starting the Server locally** <div id="6"/>
 
-Encender el servidor Apache XAMPP
+Starting the Apache XAMPP server
 
-Encender el servidor MySQL XAMPP
+Start the MySQL XAMPP server
 
-Corroborar que el servidor PostgreSQL está activo
+Verify that the PostgreSQL server is active
 
-Ejecutar comando
+Open terminal inside root folder of API and then execute the following command:
 
 ```bash
 npm start
 ```
 
-Verificar si las tablas cargan
+Check if the tables load
 
-Verificar si Apollo Server carga en puerto 4000
+Check if Apollo Server loads on port 4000
