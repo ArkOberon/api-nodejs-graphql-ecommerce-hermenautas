@@ -1,6 +1,6 @@
 <div>
   <div>   
-    <img src="" alt="banner" />
+    <img src="https://github.com/ArkOberon/api-nodejs-graphql-ecommerce-hermenautas/blob/main/ecommerce-api.png?raw=true" alt="banner" />
   <div />
 
   <div align="center">
